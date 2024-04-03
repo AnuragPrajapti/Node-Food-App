@@ -21,6 +21,7 @@ app.use(morgan("dev"));
 // routes
 app.use("/api/vi/auth", require("./routes/authRoutes"));
 app.use("/api/vi/user", require("./routes/userRoutes"));
+app.use("/api/vi/resturant", require("./routes/resturantRoutes"));
 
 app.get("/get", (req, res) => {
   res.send("Data get Successfully!");
