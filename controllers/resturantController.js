@@ -110,7 +110,7 @@ const getResturantById = async (req, res) => {
     console.log("error -->", error);
     return res.status(500).send({
       success: false,
-      message: "Error in resturant get API!",
+      message: "Error In Get Resturant by id API!",
       error,
     });
   }

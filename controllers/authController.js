@@ -35,13 +35,13 @@ const registerController = async (req, res) => {
       answer,
     });
 
-    res.status(201).send({
+    return res.status(201).send({
       success: true,
       message: "Successfully Register!",
       user,
     });
   } catch (error) {
-    res.status(500).send({
+    return res.status(500).send({
       success: false,
       message: "Error In register API",
       error: error,

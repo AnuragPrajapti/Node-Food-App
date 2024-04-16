@@ -22,13 +22,14 @@ app.use(morgan("dev"));
 app.use("/api/vi/auth", require("./routes/authRoutes"));
 app.use("/api/vi/user", require("./routes/userRoutes"));
 app.use("/api/vi/resturant", require("./routes/resturantRoutes"));
+app.use("/api/vi/category", require("./routes/categoryRoutes"));
 
 app.get("/get", (req, res) => {
   res.send("Data get Successfully!");
 });
 
-// port
+// PORT
 const PORT = process.env.PORT || 8001;
 
-//listen
+//LISTEN
 app.listen(PORT, () => console.log(`Server running ${PORT}`));
