@@ -23,6 +23,7 @@ app.use("/api/vi/auth", require("./routes/authRoutes"));
 app.use("/api/vi/user", require("./routes/userRoutes"));
 app.use("/api/vi/resturant", require("./routes/resturantRoutes"));
 app.use("/api/vi/category", require("./routes/categoryRoutes"));
+app.use("/api/vi/food", require("./routes/foodRoutes"));
 
 app.get("/get", (req, res) => {
   res.send("Data get Successfully!");
